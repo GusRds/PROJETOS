@@ -1,0 +1,130 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+.bar_one ul{
+    font-size: 11px;
+    background-color: #313030;
+    color: #FFF;
+    justify-content: space-around;
+    display: flex;
+    padding: 0px 160px;
+}
+.btn_buy{
+    height: 30px;
+    background-color: #0977f5;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    border-radius: 1rem;
+    color: #FFF;
+
+}
+.text{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #ededed;
+    height: 50px;
+    margin-bottom: 40px;
+    font-size: 13px;
+}
+.text a{
+    text-decoration: none;
+}
+.bar_two{
+    text-align: center;
+    border-bottom: solid 1px #dcd8d8;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 160px;
+    margin: 0 auto;
+    font-size: 13px;
+}
+
+.bar_two ul{
+   align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.main_text{
+    margin: 20px;
+    text-align: center;
+}
+.main_text, .value,.buy{
+    margin: 0 auto;
+    text-align: center;
+    width: 450px;
+}
+.main_text h1{
+    font-size: 80px;
+}
+
+
+
+
+.image{
+    text-align: center;
+}
+
+.names{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 20px 350px;
+}
+#buttons ul{
+    display: flex;
+    margin: 0 350px;
+}
+#buttons li{
+    
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  
+}
+#buttons li .color{
+    
+   
+    box-shadow: 1px 1px 1px;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+}
+.description,.color{
+    cursor:pointer ;
+}
+li .description{
+    font-size: 0.7rem;
+    color: #1d1d1d;
+    margin-top: 0.7rem;
+}
+
+#green .color{
+    background-color: #394c38;
+}
+#prata .color{
+    background-color: #f1f2ed;
+}
+#golden .color{ background-color: #fae7cf;}
+#grafite.color{  background-color: #54524f;}
+#blue .color{ background-color: #a7c1d9;}
+
+
+
+.selected {
+    outline: 2px solid #43a1ff;
+  }
