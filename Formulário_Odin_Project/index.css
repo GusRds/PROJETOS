@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Norse';
+    src:  url('fonts/norse/Norse/norse/Norsebold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    
+    width: 100vw;
+    height: 100vh;
+}
+.image{
+    width: 30rem;
+    height: 100vh;
+    background-image: url("img/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+}
+.logo{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    color: white;
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 3rem;
+}   
+
+.logo img{
+    width: 4rem;
+    height: 5rem;
+    
+}
+.logo p{
+    font-family: 'Norse';
+    
+}
+
+.text{
+    
+   
+    
+    padding: 4rem 0 2rem 3rem;
+    font-weight: bold;
+    background-color: #f2eeee;
+    
+    
+}
+.formulary{
+    padding: 0 0 0 3rem;
+    background-color: white;
+}
+.text p{
+    width: 40rem;
+    font-size: 24px;
+    
+    
+}
+.form{
+    
+    width: 100%;
+    box-shadow: 0 6px 7px -6px black;
+}
+
+.teste{
+    background-color: #f2eeee;
+    display: block;
+    width: 100%;
+    
+}
+
+.create_account{
+    padding-left: 2rem;
+    margin-top: 3rem;
+}
+
+.form p{
+    font-weight: bold;
+    
+}
+
+.form_grid{
+    padding-bottom: 2rem;
+    width: 40rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem 2rem; 
+    background-color: #ffffff;
+    height: 10rem
+    
+    
+}
+
+.form_row{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_row input{
+    width: 15rem;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 2px;
+    height: 1.4rem;
+    padding-left: 0.5rem;
+    border-radius: 3px;
+}
+.form_row input:focus{
+    outline: none;
+    border-color: rgb(0, 0, 0, 0.5);
+}
+.form_row input:user-invalid{
+    border-color:red;
+}
+.form_row input:user-valid{
+    border-color:blue;
+}
+
+.form_row label{
+    font-weight: bold;
+    font-size: 0.6rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+#create{
+    cursor: pointer;
+    height: 3rem;
+    border-radius: 8px;
+    width: 12rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+    background-color: rgb(86, 101, 71);
+
+}
+.create_account{
+    
+    background-color: #f2eeee;
+}
+.create_account p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.let{
+    padding: 1rem 0 1rem 0;
+}
