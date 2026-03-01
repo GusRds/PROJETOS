@@ -18,11 +18,12 @@
 }
 .content{
     grid-area: principal;
+    margin-bottom: 1rem;
 }
 
 
 .container{
-    background-color: red;
+    background-color: rgb(244, 243, 243);;;
     width: 100%;
     height: 100%;
     display: grid;
@@ -144,7 +145,7 @@ img{
     align-items: center;
 }
 .links div{
-    background-color: blue;
+    background-color: rgb(36, 128, 220);
     color: white;
     width: 5rem;
     height: 2rem;
@@ -156,7 +157,7 @@ img{
 .content_box{
     grid-area: main;
     background-color: rgb(244, 243, 243);
-    padding: 1rem 0.5rem 2rem 1rem;
+    padding: 1rem 0.5rem 0rem 1rem;
     
 }
 .annoucements{
@@ -164,7 +165,7 @@ img{
 }
 .trending{
     grid-area: down;
-    background-color: blueviolet;
+    
 }
 .content{
     
@@ -210,18 +211,21 @@ img{
 }
 
 .block_text{
-    height:6.5rem;
+    margin-top: 1rem;
+    height:5.5rem;
 }
 .block_text h3{
     font-size: 14px;
 }
 .block_text p{
+    color: gray;
     font-size: 13px;
 }
 .annoucements{
     background-color: rgb(244, 243, 243);
     padding: 1rem 0 0 0.5rem;
     height: max-content;
+    margin-bottom: 2rem;
    
 }
 .lateral_box{
@@ -239,7 +243,7 @@ img{
     width: 15rem;
     border-bottom: solid 1px;
 }
-.informs h3, .arroba p{
+.informs h3{
     margin-top: 0.5rem;
     font-size: 14px;
 }
@@ -253,36 +257,47 @@ img{
 }
 .trending{
     background-color: rgb(244, 243, 243);
-    padding: 1rem 0 0 0.5rem;
-    
+    height: 100%;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
 }
 .trend{
     
-    background-color: white;
-    display: grid;
-    grid-template: 85px 85px 85px 85px/ 170px;
-    border-radius: 10px;
-    padding: 1rem 0 0 0.5rem;
-    margin: 0.5rem 2rem 0 0;
-}
-.trend div{
+   height: max-content;
+   display:    grid;
+   grid-template: 1fr 1fr 1fr 1fr/100%;
+   background-color: white;
+   border-radius: 10px;
+   margin-right: 2rem;
+   padding: 1rem 0 1rem 1rem;
+   gap: 2rem;
    
+}
+.align{
+    gap: 1rem;
     align-items: center;
-    margin: 1rem;
+    justify-items: center;
     display: flex;
-    width: max-content;
     
+}
+.arroba h5{
+    font-size: 14px;
+}
+.arroba p{
+    color: gray;
 }
 .arroba{
-    
-    display: flex;
-    flex-direction: column;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
 }
 .social{
-    background-color: red;
-    width: 3rem;
-    height: 3rem;
+    background-color: red; 
+    width: 2.8rem;
+    height: 2.8rem;
     border-radius: 50%;
+    flex-shrink: 0;
+  
     
 }
 #border{
@@ -292,3 +307,8 @@ img{
 .block, .trend, .bar, .lateral_box{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.main_text{
+    font-weight: bold;    
+}
+
