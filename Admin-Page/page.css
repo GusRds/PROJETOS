@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.sidebar{
+    grid-area: lateral;
+    background-color: rgb(44, 148, 251);
+}
+.bar{
+    grid-area: topo;
+    background-color: white;
+   
+    /* x-offset | y-offset | blur | spread | color */
+    box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 1);
+
+}
+.content{
+    grid-area: principal;
+}
+
+
+.container{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    grid-template-rows: 8rem 1fr;
+    grid-template-areas: "lateral topo"
+                        "lateral principal";
+
+    
+}
+
+
+.logo_image{
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    align-items: center;
+}
+.logo_image img{
+    
+    height: 2rem;
+}
+
+img{
+    
+    width: 1.5rem;
+}
+
+.items{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+.invert, .logo_image{
+    filter: invert(1);
+}
+.items div{
+    
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.items h3, img, h2{ 
+    cursor:pointer;
+}
+.more_items{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.more_items div{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.more_items h3{
+    cursor: pointer;
+}
+.alt_bar{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.alt_bar .name{
+    display: flex;
+    gap: 1rem;
+    padding-right: 4rem;
+}
+.search_bar{
+    gap: 0.7rem;
+   display: flex;
+   padding-left: 2rem;
+}
+
+.search_bar input{
+    height: 1.7rem;
+    padding-left: 0.8rem;
+    border-radius: 12px;
+    width: 30rem;  
+    border: none;
+    background-color: rgb(233, 232, 234);
+}
+.name h5{
+    
+    align-content: center;
+}
+.alt_bar .name .logo{
+    width:2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    
+
+}
+
+.phrase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_name img {
+    width: 3.5rem;
+    height: 2.7rem;
+}
+.links{
+    display: flex;
+    gap: 2rem;
+    font-weight: bold;
+    align-items: center;
+}
+.links div{
+    background-color: blue;
+    color: white;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    align-content: center;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.content_box{
+    grid-area: main;
+    background-color: rgb(244, 243, 243);
+    padding: 1rem 0.5rem 2rem 1rem;
+    
+}
+.annoucements{
+    grid-area: up;
+}
+.trending{
+    grid-area: down;
+    background-color: blueviolet;
+}
+.content{
+    
+    display: grid;   
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    
+    grid-template-areas: "main up"
+    "main down";
+
+    
+    
+}
+.block{
+    background-color: white;
+    
+}
+.blocks{
+    
+    height: max-content;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr 1fr;
+    gap: 25px;  
+    
+}
+.blocks .block{
+  
+    border-left: solid 6px yellow;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    width:22rem;
+    height: 12rem;
+    
+}
+
+.logos{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: end;
+    
+    gap: 2rem;
+   
+}
+
+.block_text{
+    height:6.5rem;
+}
+.block_text h3{
+    font-size: 14px;
+}
+.block_text p{
+    font-size: 13px;
+}
+.annoucements{
+    background-color: rgb(244, 243, 243);
+    padding: 1rem 0 0 0.5rem;
+    height: max-content;
+   
+}
+.lateral_box{
+    display: grid;
+    
+    margin: 0rem 2rem 0 0;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: white;
+    grid-template: 1fr 1fr 1fr/170px;
+}
+
+.lateral_box .informs{
+    margin-left: 0.5rem;
+    width: 15rem;
+    border-bottom: solid 1px;
+}
+.informs h3, .arroba p{
+    margin-top: 0.5rem;
+    font-size: 14px;
+}
+#inform{
+    border: none;
+}
+.informs p{
+    
+    margin-top: 0.5rem;
+    font-size: 13px;
+}
+.trending{
+    background-color: rgb(244, 243, 243);
+    padding: 1rem 0 0 0.5rem;
+    
+}
+.trend{
+    
+    background-color: white;
+    display: grid;
+    grid-template: 85px 85px 85px 85px/ 170px;
+    border-radius: 10px;
+    padding: 1rem 0 0 0.5rem;
+    margin: 0.5rem 2rem 0 0;
+}
+.trend div{
+   
+    align-items: center;
+    margin: 1rem;
+    display: flex;
+    width: max-content;
+    
+}
+.arroba{
+    
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    background-color: red;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    
+}
+#border{
+    border: none;
+}
+
+.block, .trend, .bar, .lateral_box{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
