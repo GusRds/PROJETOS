@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    <div class="container">
+        <div class="books">
+            <h1>Adicione ou exclua livros da sua lista</h1>
+            <div class="buttons">
+                
+                <button id="add_book">Adicionar Livro</button>
+            
+            </div>
+            
+        </div>
+        <dialog id="add_modal">
+            <h3>Adicione um novo livro</h3>
+            <form id="form" method="dialog">
+                <div class="title">
+                    <label for="title">Título: </label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div class="author">
+                    <label for="author">Autor: </label>
+                    <input type="text" name="author" id="author">
+                </div>
+                <div class="year">
+                    <label for="year">Ano: </label>
+                    <input type="number" name="year" id="year">
+
+                </div>
+                <div class="read">
+                    <label for="read">Já leu este livro? </label>
+                    <input type="radio" name="read" id="yes" value="sim">
+                    <label for="yes">sim</label>
+                     <input type="radio" name="read" id="not" value="nao">
+                     <label for="not">não</label>
+                </div>
+            </form>
+            <input type="submit" form="form" name="submit_form" id="submit_form">
+            <button id="cancel">Cancelar</button>
+        </dialog>
+        <div class="show_books">
+            Aqui irao aparecer os livros da biblioteca
+        </div>
+    </div>
+
+
+  
+</body>
+<script src="library.js"></script>
+</html>
