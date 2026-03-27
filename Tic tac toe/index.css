@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    justify-items: center;
+    margin-top: 8rem;
+}
+.container{
+    border: solid 2px black;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0rem auto;
+  
+    
+}
+
+.celula{
+    width: 100px;
+    height: 100px;
+    border: solid  2px black;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.X {
+    color: #e74c3c; 
+    font-weight: bold;
+    
+    font-size: 3rem;
+   
+    
+}
+
+.O {
+    color: #3498db; 
+    font-weight: bold;
+    
+   
+  
+}
